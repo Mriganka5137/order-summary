@@ -53,21 +53,25 @@ html {
   font-size: 62.5%;
   font-family: "Red Hat Display", sans-serif;
   background-color: var(--color-pale-blue);
+  background-image: url(./pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 
 .card {
   max-width: 40rem;
   margin: 20rem auto;
   /* border: 1px solid red; */
-  border-radius: 1.2rem;
+  border-radius: 1.5rem;
   background-color: white;
   box-shadow: 5px 20px 35px 5px rgba(0, 0, 0, 0.141);
 }
 
 .hero-img {
   width: 100%;
-  border-top-left-radius: 1.2rem;
-  border-top-right-radius: 1.2rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .details-container {
