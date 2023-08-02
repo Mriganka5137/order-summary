@@ -52,21 +52,133 @@ The designs were created to the following widths:
 html {
   font-size: 62.5%;
   font-family: "Red Hat Display", sans-serif;
+  background-color: var(--color-pale-blue);
 }
 
 .card {
   max-width: 40rem;
   margin: 20rem auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  border-radius: 1.2rem;
+  background-color: white;
+  box-shadow: 5px 20px 35px 5px rgba(0, 0, 0, 0.141);
 }
 
 .hero-img {
   width: 100%;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
+
+.details-container {
+  padding: 4.5rem;
+}
+
+.details-container h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: var(--color-dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+.desc {
+  font-size: 1.6rem;
+  color: var(--color-desaturated-blue);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .plan-container {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-very-pale-blue);
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+.inner-div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.plan {
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+  color: var(--color-dark-blue);
+}
+
+.price {
+  color: var(--color-desaturated-blue);
+}
+
+.button-grp {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 5rem;
+  align-items: center;
+}
+
+.btn-payment {
+  border-style: none;
+  color: var(--color-pale-blue);
+  background-color: var(--color-bright-blue);
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  border-radius: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 500ms;
+  box-shadow: 0px 5px 25px 0px rgba(48, 48, 48, 0.48);
+}
+
+.btn-payment:hover {
+  background-color: #5f50ff;
+  transform: translateY(-5px);
+}
+
+.btn-cancel {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  display: inline-block;
+  font-weight: 700;
+  color: var(--color-desaturated-blue);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.btn-cancel:hover {
+  color: black;
+}
+
+.change-link {
+  transition: all 500ms;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-bright-blue);
+}
+
+.change-link:hover {
+  text-decoration: none;
+  /* color: var(--color-dark-blue); */
+  color: #5f50ff;
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    margin: 6rem 1rem;
+  }
+
+  .details-container {
+    padding: 3.5rem 2.5rem;
+  }
 }
