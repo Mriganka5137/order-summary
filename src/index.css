@@ -53,3 +53,20 @@ html {
   font-size: 62.5%;
   font-family: "Red Hat Display", sans-serif;
 }
+
+.card {
+  max-width: 40rem;
+  margin: 20rem auto;
+  border: 1px solid red;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
